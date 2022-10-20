@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    background-color: #07252d;
+}
+h2{
+    position: relative;
+
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: .7em;
+    outline: none;
+
+}
+
+h2:focus{
+    
+    animation: animate 3s linear 0.5s 1 normal forwards;;
+
+}
+
+@keyframes animate {
+    0%, 94%, 99%{
+        color: #0e3742;
+        text-shadow: none;
+    }50%, 93%, 98%, 100% {
+        color: #fff;
+        text-shadow: 
+            0 0 10px #ff1100,
+            0 0 20px #ff1100,
+            0 0 40px #ff1100,
+            0 0 60px #ff1100,
+            0 0 80px #ff1100,
+            0 0 100px #ff1100;
+    }
+}
